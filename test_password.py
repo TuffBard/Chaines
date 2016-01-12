@@ -25,11 +25,11 @@ class TestPassword(unittest.TestCase):
     def test_hasTwoPairsFalse(self):
         self.assertEqual(pwd.hasTwoPairs("abacc"), False)
 
-    def test_hasNoBadCharTrue(self):
-        self.assertEqual(pwd.hasNoBadChar("baacc"), True)
+    #def test_hasNoBadCharTrue(self):
+    #    self.assertEqual(pwd.hasNoBadChar("baacc"), True)
 
-    def test_hasNoBadCharFalse(self):
-        self.assertEqual(pwd.hasNoBadChar("&é(-è_ççà)="), False)
+    #def test_hasNoBadCharFalse(self):
+    #    self.assertEqual(pwd.hasNoBadChar("&é(-è_ççà)="), False)
 
     
 

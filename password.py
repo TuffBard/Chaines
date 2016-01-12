@@ -48,6 +48,20 @@ def hasSeries(password):
     
 def hasTwoPairs(password):
     pwd = list(password)
+    pair = 0
+    found = False
+    c = pwd[0]
+    
+    for i in range(0,len(pwd)-1):
+        if pwd[i] == c:
+            pair +=1
+        else:
+            c = pwd[i]
+
+        if pair == 2:
+            found = True
+                
+    return found
     
 def hasNoBadChar(password):
     pwd = list(password)
