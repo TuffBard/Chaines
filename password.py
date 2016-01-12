@@ -27,7 +27,30 @@ def getNext(password):
     
     return ''.join(pwd) #3 affiche le nouveaux mot de passe
 
-
+def hasSeries(password):
+    pwd = list(password)
+    suite = 0
+    found = False
+    for i in range(0,len(pwd)-1):
+        if suite == 3: #Si il y a une suite de trois lettre, passe found a True 
+            found = True
+            
+        if suite == 0: #Si on commence la suite on sauvegarde la lettre dans char
+            c = pwd[i]
+            suite += 1
+        else:
+            if pwd[i] == chr(ord(c)+1): #Vérifie si c'es la lettre suivante
+                suite += 1
+                c = pwd[i]
+            else:
+                suite = 0
+    return found
+    
+def hasTwoPairs(password):
+    pwd = list(password)
+    
+def hasNoBadChar(password):
+    pwd = list(password)
 
 # Grâce à ce fragment de code, si vous exécutez ce fichier, les tests doctests seront exécutés également. 
 # Si vous ne voulez plus que les tests s'exécutent, commentez les deux lignes ci-dessous. 
