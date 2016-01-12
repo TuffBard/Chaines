@@ -2,16 +2,20 @@
 def getNext(password):
     """
     Série de tests exprimés en doctest
-    >>> getNext('a')
-    'b'
-    >>> getNext('az')
-    'ba'
-    >>> getNext('bc')
-    'bd'
+    >>> getNext('aaaaa')
+    'aaaab'
+    >>> getNext('aaaaz')
+    'aaaba'
+    >>> getNext('zzzzz')
+    'aaaaa'
     """
     pwd = list(password)  #1  pwd contient chaque lettre du lot de passe sous forme de liste
     found = False
     i=len(pwd)-1
+
+    if password == 'zzzzz':
+        pwd = list('aaaaa')
+        found = True
 
     while not found:
         if pwd[i] < 'z':

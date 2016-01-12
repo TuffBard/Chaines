@@ -7,3 +7,4 @@ DASI 1
 - tout caractère different des lettres (y compris les accents)
 
 
+2.2 Pour un mdp de longueur n on peut avoir 26^n mdp
