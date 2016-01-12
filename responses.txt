@@ -1,4 +1,9 @@
 GARCIA Nicolas
-BERKANI Lyes
 DASI 1
+
+1.4 Cas ou ca peut planter:
+- Mot de passe = "z" devient "b"
+- minuscule + majuscule
+- tout caractère different des lettres (y compris les accents)
+
 
